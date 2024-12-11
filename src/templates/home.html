@@ -2,5 +2,10 @@
 
 {% block title %}SaaS - {{block.super}}{% endblock title %}
 {% block content %}
+<h1>{{title}}</h1>
     <p>Home Page !</p>
+
+<!-- <p>{{request.user}} {{request.method}} -{{request.user.is_authenticated}}</p> -->
+ {% include 'snippets/welcome-user-msg.html' %}
+
 {% endblock content %}
