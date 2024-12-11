@@ -1,1 +1,2 @@
-# Saas-Foundation-Using-Django
+# Running code
+python manage.py runserver
