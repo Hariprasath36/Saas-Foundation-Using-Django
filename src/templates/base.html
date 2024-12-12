@@ -4,15 +4,19 @@
         <title>
         {% block title %}Page{% endblock title %}
         </title>
-        <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+
+        {% include 'base/css.html' %}
+       
     </head>
     <body>
-     
+        
+        {% include 'nav/navbar.html' %}
            
         {% block content %}
-         ksagfdak
+        
        {% endblock content %}
-       <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+       {% include 'base/js.html' %}
 
     </body>
     </html>
