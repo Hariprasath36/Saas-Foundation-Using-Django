@@ -109,16 +109,19 @@ if DATABASE_URL is not None:
 # Replace the DATABASES section of your settings.py with this
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config.path.replace('/', ''),
-        'USER': config.username,
-        'PASSWORD': config.password,
-        'HOST': config.hostname,
-        'PORT': 5432,
-    }
-}
+
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': config.path.replace('/', ''),
+#         'USER': config.username,
+#         'PASSWORD': config.password,
+#         'HOST': config.hostname,
+#         'PORT': 5432,
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
